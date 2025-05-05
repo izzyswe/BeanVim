@@ -18,7 +18,7 @@
 # Screenshots
 ### Dashboard
 <img width="1680" alt="Screenshot 2025-05-05 at 6 28 04 AM" src="https://github.com/user-attachments/assets/2ff9bb1a-d927-4cdc-968a-bcf8ade36e59" />
-
+### NOTE: QUICK SETTING MAY NOT WORK FOR YOUR COMPUTER, IF THATS THE CASE GO TO /lua/beanvim/plugins/alpha.lua AND PROVIDE THE PROPER DRECTORY
 
 ### Editor Layout
 <img width="1679" alt="Screenshot 2025-05-05 at 6 26 12 AM" src="https://github.com/user-attachments/assets/ec09ed2a-eff8-4b82-800e-c6b6b597ec3c" />
