@@ -46,13 +46,13 @@ Option 1: <br>
 - press Win + R <br>
 - Type in the field `%LOCALAPPDATA%` <br>
 - rename the folder to "nvim" <br>
-- launch neovim by typing `nvim`
+- launch Neovim by typing `nvim`
 
 Option 2: <br>
 - Go to Terminal <br>
 - Type `cd C:\Users\<YourUsername>\AppData\Local\` <br>
 - rename the folder to "nvim" <br>
-- launch neovim by typing `nvim`
+- launch Neovim by typing `nvim`
 
 # Plugin Features
 - Java LSP support via `jdtls`
@@ -67,23 +67,23 @@ Option 2: <br>
 
 # Why I Made This
 So this preconfiguration is based on my own configurations.
-The reason i decided to make a whole dedicated version of this configuration 
+The reason I decided to make a whole dedicated version of this configuration 
 java specific is if you're a weirdo like me and you are chronically obsessed with using Neovim for everything. <br>
 
-I like using Intellij and Eclipse works, These were the 2 tools I used for awhile before I commited to Neovim full-time 
-Intellij IdeaVim works great and the Eclipse vim extension is abit spotty but works for what you need 
+I like using Intellij and Eclipse works, These were the 2 tools I used for awhile before I committed to Neovim full-time 
+Intellij IdeaVim works great and the Eclipse vim extension is a bit spotty but works for what you need 
 out of the 2, intellij vim extension works better, However, I found myself trying to force Vim keybinds into Intellij
 and it was getting very frustrating as there was 2 conflicting keybind for everything, Could I have just overriden alot of them? Absolutely
-but i didn't want to do the manual keybind change, my vim configuration had most of the basic things i needed anyways, so over the months, 
-I tried to commit full time to neovim, it was difficult, remembering the keybind, knowing how and what the modularity did and what things do <br>
+but i didn't want to do the manual keybind change, my Neovim configuration had most of the basic things I needed anyways, so over the months, 
+I tried to commit full time to Neovim, it was difficult, remembering the keybind, knowing how and what the modularity did and what things do...etc... <br>
 
-setting it up for other languages were fairly simple and doesn't require much tinkering, since the cmd line and Neovim was all you needed, 
-and by this time, i was getting very familar with the keybind, the environment and everything, so i tried to use it for java full time 
+Setting it up for other languages were fairly simple and didn't require much tinkering, since the cmd line and Neovim was all you needed, 
+and by this time, I was getting very familar with the keybind, the environment and everything, so I tried to use it for java full time 
 but setting up for java environment was frustrating, especially when i was trying to set up the project structure to work and run like Eclipse.
-so I thought there would be exisiting popular pre configuration for Java or distro and i didn't found many, most of them were very general for <br>
+so I thought there would be exisiting popular pre configuration for Java or distro and I didn't find many, most of them were very general for <br>
 the more modern languages or ones that don't require too much setup.
 
-Anyways, i realized my setup has more and more became much more focused on Java, and I thought incase anyone would like to use Java in their Neovim
+Anyways, i realized my setup has more and more became much more focused on Java, and I thought in case anyone would like to use Java in their Neovim
 and find it not worth or frustrating to setup a Java environment, This is for you! its not great by any means 
 but i think you will be able to do most of the things you want straight out of the box, no crazy configuring or tweaking. <br>
 
