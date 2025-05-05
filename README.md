@@ -86,9 +86,15 @@ placeholder
 Perhaps you don't find BeanVim to be helpful or what you exactly need <br>
 Here are other alternatives to consider: <br>
 
-IzzySWE Original Configuration [Neovim Configuration Link](https://github.com/izzyswe/Neovim) or `https://github.com/izzyswe/Neovim` <br>
-AstroVim Distro [Astrovim Link](https://github.com/AstroNvim/AstroNvim) or `https://github.com/AstroNvim/AstroNvim` <br>
-LunarVim [Lunarvim Link](https://github.com/LunarVim/LunarVim) or `https://github.com/LunarVim/LunarVim` <br>
-CosmicVim [CosmicVim Link](https://github.com/CosmicNvim/CosmicNvim) or `https://github.com/CosmicNvim/CosmicNvim` <br>
-NvChad [NvChad Link](https://github.com/NvChad/NvChad) or `https://github.com/NvChad/NvChad` <br>
-Make your own! [KickStart Link](https://github.com/nvim-lua/kickstart.nvim) or `https://github.com/nvim-lua/kickstart.nvim` <br>
+### IzzySWE Original Configuration
+[Neovim Configuration Link](https://github.com/izzyswe/Neovim) or `https://github.com/izzyswe/Neovim` <br>
+### AstroVim Distro 
+[Astrovim Link](https://github.com/AstroNvim/AstroNvim) or `https://github.com/AstroNvim/AstroNvim` <br>
+### LunarVim 
+[Lunarvim Link](https://github.com/LunarVim/LunarVim) or `https://github.com/LunarVim/LunarVim` <br>
+### CosmicVim 
+[CosmicVim Link](https://github.com/CosmicNvim/CosmicNvim) or `https://github.com/CosmicNvim/CosmicNvim` <br>
+### NvChad 
+[NvChad Link](https://github.com/NvChad/NvChad) or `https://github.com/NvChad/NvChad` <br>
+### Make your own! 
+[KickStart Link](https://github.com/nvim-lua/kickstart.nvim) or `https://github.com/nvim-lua/kickstart.nvim` <br>
