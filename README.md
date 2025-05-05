@@ -1,7 +1,7 @@
 <div align="center">
   <img src="https://github.com/user-attachments/assets/0ed63ca5-4cd1-4d68-a160-99e08219f729" alt="BeanVim" width="140"/>
   <h1>BeanVim</h1>
-  <H3>Brew a Project, Make it possible!</H3>
+  <H3>Brew a Project, Make it Possible!</H3>
 </div>
 
 ---
