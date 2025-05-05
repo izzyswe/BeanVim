@@ -35,15 +35,21 @@ Go to Terminal
 type `cd ~/.config/` <- this is your configuration folder where Neovim lives <br>
 or open `open ~/.config` <br>
 then unzip and drag the cloned folder into `~/.config/` <br>
+rename the folder to "nvim" <br>
+launch neovim by typing `nvim`
 
 #### ON WINDOWS
 Option 1: <br>
 - press Win + R <br>
 - Type in the field `%LOCALAPPDATA%` <br>
+- rename the folder to "nvim" <br>
+- launch neovim by typing `nvim`
 
 Option 2: <br>
 - Go to Terminal <br>
 - Type `cd C:\Users\<YourUsername>\AppData\Local\` <br>
+- rename the folder to "nvim" <br>
+- launch neovim by typing `nvim`
 
 # Plugin Features
 - Java LSP support via `jdtls`
@@ -81,7 +87,88 @@ but i think you will be able to do most of the things you want straight out of t
 I hope you find it just as helpful as I did when developing!
 <br>
 # Commands and Keybinds
-placeholder
+ALL KEYBINDS ARE CASE SENSITIVE
+
+### Basic command to build habit
+
+| Action  | Commands/mapping |
+| --------------- | ---------- |
+| Insert Mode     | `i`        |
+| visual Mode     | `v`        |
+| Scroll up       | `ctrl + u` |
+| Scroll down     | `ctrl + d` |
+| yank (copy)     | `y`        |
+| paste           | `ctrl + v` |
+| undo            | `u`        |
+| redo            | `ctrl + r` |
+| quit all        | `:qa`      |
+| save            | `:w`       |
+| force quit      | `:q!`      |
+
+
+### Creating Projects
+
+| Action  | Commands |
+| --------------- | ---------------------------- |
+| Maven Project   | `:MavenInit <project name>`  |
+| Gradle Project  | `:GradleInit`                |
+| Eclipse Project | `:EclipseInit`               |
+
+### Package Manager (Lazy.nvim & Mason)
+
+| Action  | Commands |
+| --------------- | ------------------ |
+| Open Lazy       | `:Lazy`            |
+| sync Lazy       | `:Lazy sync`       |
+| Open Mason      | `:Mason`           |
+
+### LSP Mapping
+
+| Action  | Mapping |
+| ------------------------- | ------------------ |
+| Go to Declaration         | `g + D`            |
+| Show LSP references       | `g + R`            |
+| Available Code Actions    | `c + a`            |
+| Smart Rename              | `<leader> + r + n` |
+| Show buffer diagnostics   | `<leader> + D`     |
+| Show line diagnostics     | `<leader> + d`     |
+| Go to previous diagnostic | `[ + d`            |
+| Go to next diagnostic     | `] + d`            |
+| Show Documentation        | `K`                |
+| Restart LSP               | `<leader> + r + s` |
+
+### Code Editor & File Explorer Mapping
+
+| Action  | Mapping |
+| ------------------------------- | -------------------- |
+| Run Program                     |  `<leader> + r`      |
+| Toggle Terminal                 |  `ctrl + t`          |
+| Toggle Outline                  |  `<leader> + O`      |
+| Toggle File Explorer            |  `<leader> + e + e`  |
+| Toggle Explorer on current file | `<leader> + e + f`   |
+| Collapse File Explorer          | `<leader> + e + c`   |
+| Refresh File Explorer           | `<leader> + e + r`   |
+| stop running program (in term)  | `ctrl + c`           |
+
+### T-MUX / Window Manipulation
+
+| Action  | Mapping |
+| -------------------------------- | ------------------ |
+| Maximize/minimize split windows  | `<leader> + s + m` |
+| Split window vertically          | `<leader> + s + v` |
+| Split window horizontally        | `<leader> + s + h` |
+| Create equal size splits         | `<leader> + s + e` |
+| Close current split              | `<leader> + s + x` |
+
+### Fuzzy Finder & Android/IOS Emulator
+
+| Action  | Commands/Mapping |
+| -------------------------------- | --------------------------- |
+| Fuzzy Find in CWD                | `<leader> + f + f`          |
+| Fuzzy find recent files          | `<leader> + f + r`          |
+| Find string in cwd               | `<leader>fs`                |
+| find string under cursor in cwd  | `<leader>fc`                |
+| Open Simulators                  | `:Telescope simulators run` |
 
 # Other Distros
 Perhaps you don't find BeanVim to be helpful or what you exactly need <br>
