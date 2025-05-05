@@ -16,10 +16,17 @@
 
 
 # Screenshots
-placeholder
+### Dashboard
+<img width="1680" alt="Screenshot 2025-05-05 at 6 28 04 AM" src="https://github.com/user-attachments/assets/2ff9bb1a-d927-4cdc-968a-bcf8ade36e59" />
+
+
+### Editor Layout
+<img width="1679" alt="Screenshot 2025-05-05 at 6 26 12 AM" src="https://github.com/user-attachments/assets/ec09ed2a-eff8-4b82-800e-c6b6b597ec3c" />
 
 # How To Install
-placeholder
+### CLONE USING THE FOLLOWING
+(IF YOU DONT HAVE GIT INSTALLED, CLICK HERE `https://git-scm.com/downloads`) <br>
+copy and paste -> `git clone https://github.com/izzyswe/BeanVim.git`
 
 # Plugin Features
 placeholder
