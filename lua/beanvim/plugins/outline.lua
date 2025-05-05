@@ -1,20 +1,28 @@
 return {
   "hedyhli/outline.nvim",
-  lazy = true,
-  cmd = { "Outline", "OutlineOpen" },
-  keys = { -- Example mapping to toggle outline
-    { "<leader>o", "<cmd>Outline<CR>", desc = "Toggle outline" },
-  },
+  event = "VeryLazy",
   config = function()
-    -- Example mapping to toggle outline
-    vim.keymap.set("n", "<leader>o", "<cmd>Outline<CR>",
-    { desc = "Toggle Outline" })
-    require("outline").setup {
-      -- Your setup opts here (leave empty to use defaults)
+    require("outline").setup({
       outline_window = {
         width = 15,
         auto_jump = true,
       },
-    }
+    })
+
+    -- Autocmd to auto-open Outline for real files
+    vim.api.nvim_create_autocmd("BufReadPost", {
+      callback = function(args)
+        local bufnr = args.buf
+        if vim.api.nvim_buf_get_option(bufnr, "buftype") == "" then
+          vim.schedule(function()
+            require("outline").open()
+          end)
+        end
+      end,
+    })
+
+    -- Optional: map toggle again if needed
+    vim.keymap.set("n", "<leader>o", "<cmd>Outline<CR>", { desc = "Toggle Outline" })
   end,
 }
+
