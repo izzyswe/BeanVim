@@ -20,7 +20,7 @@
 ### Dashboard
 <img width="1680" alt="Screenshot 2025-05-05 at 6 28 04 AM" src="https://github.com/user-attachments/assets/2ff9bb1a-d927-4cdc-968a-bcf8ade36e59" />
 
-#### NOTE: QUICK SETTING MAY NOT WORK FOR YOUR COMPUTER, IF THATS THE CASE GO TO /lua/beanvim/plugins/alpha.lua AND PROVIDE THE PROPER DRECTORY
+#### NOTE: QUICK SETTING MAY NOT WORK FOR YOUR COMPUTER, IF THATS THE CASE GO TO /lua/beanvim/plugins/alpha.lua AND PROVIDE THE PROPER DIRECTORY
 
 ### Editor Layout
 <img width="1679" alt="Screenshot 2025-05-05 at 6 26 12 AM" src="https://github.com/user-attachments/assets/ec09ed2a-eff8-4b82-800e-c6b6b597ec3c" />
@@ -39,7 +39,7 @@ type `cd ~/.config/` <- this is your configuration folder where Neovim lives <br
 or open `open ~/.config` <br>
 then unzip and drag the cloned folder into `~/.config/` <br>
 rename the folder to "nvim" <br>
-launch neovim by typing `nvim`
+launch Neovim by typing `nvim`
 
 #### ON WINDOWS
 Option 1: <br>
@@ -70,10 +70,10 @@ So this preconfiguration is based on my own configurations.
 The reason I decided to make a whole dedicated version of this configuration 
 java specific is if you're a weirdo like me and you are chronically obsessed with using Neovim for everything. <br>
 
-I like using Intellij and Eclipse works, These were the 2 tools I used for awhile before I committed to Neovim full-time 
-Intellij IdeaVim works great and the Eclipse vim extension is a bit spotty but works for what you need 
-out of the 2, intellij vim extension works better, However, I found myself trying to force Vim keybinds into Intellij
-and it was getting very frustrating as there was 2 conflicting keybind for everything, Could I have just overriden alot of them? Absolutely
+I like using IntelliJ and Eclipse works, These were the 2 tools I used for awhile before I committed to Neovim full-time 
+IntelliJ IdeaVim works great and the Eclipse vim extension is a bit spotty but works for what you need 
+out of the 2, IntelliJ vim extension works better, However, I found myself trying to force Vim keybinds into IntelliJ
+and it was getting very frustrating as there was 2 conflicting keybind for everything, Could I have just overridden alot of them? Absolutely
 but i didn't want to do the manual keybind change, my Neovim configuration had most of the basic things I needed anyways, so over the months, 
 I tried to commit full time to Neovim, it was difficult, remembering the keybind, knowing how and what the modularity did and what things do...etc... <br>
 
