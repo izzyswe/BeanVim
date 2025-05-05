@@ -31,6 +31,8 @@
 copy and paste -> `git clone https://github.com/izzyswe/BeanVim.git`
 <br>
 
+## ENSURE GRADLE AND MAVEN IS INSTALLED OR ELSE SOME FUNCTIONALITES WILL BE VERY LIMITED
+
 #### ON MACOSX/LINUX
 Go to Terminal
 type `cd ~/.config/` <- this is your configuration folder where Neovim lives <br>
