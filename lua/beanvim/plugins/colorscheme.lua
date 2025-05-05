@@ -95,22 +95,37 @@
 -- }
 
 --Catppuccin
+-- return{
+--   {
+--     'catppuccin/nvim',
+--     name = 'catppuccin',
+--     priority = 1000,
+--     config = function()
+--       require("catppuccin").setup({
+--         background = {
+--           dark = "frappe"
+--         }
+--       })
+--       vim.cmd('colorscheme catppuccin')
+--     end,
+--   }
+-- }
+
 return{
   {
-    'catppuccin/nvim',
-    name = 'catppuccin',
-    priority = 1000,
+    "sainnhe/gruvbox-material",
+    lazy = false, -- load immediately
+    priority = 1000, -- make sure it loads before other plugins
     config = function()
-      require("catppuccin").setup({
-        background = {
-          dark = "frappe"
-        }
-      })
-      vim.cmd('colorscheme catppuccin')
-    end,
+      vim.g.gruvbox_material_background = "soft" -- options: 'soft', 'medium', 'hard'
+      vim.g.gruvbox_material_palette = "material" -- options: 'material', 'mix', 'original'
+      vim.g.gruvbox_material_enable_italic = 1
+      vim.g.gruvbox_material_transparent_background = 0
+      vim.o.background = "dark"
+      vim.cmd.colorscheme("gruvbox-material")
+    end
   }
 }
-
 
 --for null value use "return {}"
 
