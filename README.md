@@ -117,6 +117,14 @@ ALL KEYBINDS ARE CASE SENSITIVE
 | Gradle Project  | `:GradleInit`                |
 | Eclipse Project | `:EclipseInit`               |
 
+### Gradle/Maven Commands
+
+| Action  | Commands |
+| --------------- | ------------------ |
+| Test Run        | `:Test`            |
+| Run Sprint Boot | `SpringBootRun`    |
+| Let me know any other commands |
+
 ### Package Manager (Lazy.nvim & Mason)
 
 | Action  | Commands |
@@ -172,6 +180,7 @@ ALL KEYBINDS ARE CASE SENSITIVE
 | Find string in cwd               | `<leader>fs`                |
 | find string under cursor in cwd  | `<leader>fc`                |
 | Open Simulators                  | `:Telescope simulators run` |
+
 
 # Other Distros
 Perhaps you don't find BeanVim to be helpful or what you exactly need <br>
