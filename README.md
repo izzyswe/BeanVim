@@ -112,10 +112,11 @@ ALL KEYBINDS ARE CASE SENSITIVE
 ### Creating Projects
 
 | Action  | Commands |
-| --------------- | ---------------------------- |
-| Maven Project   | `:MavenInit <project name>`  |
-| Gradle Project  | `:GradleInit`                |
-| Eclipse Project | `:EclipseInit`               |
+| ----------------- | ---------------------------- |
+| Maven Project     | `:MavenInit <project name>`  |
+| Gradle Project    | `:GradleInit`                |
+| Eclipse Project   | `:EclipseInit`               |
+| Open Scenebuilder | `:SceneBuilder <fxml name>`  |
 
 ### Gradle/Maven Commands
 
