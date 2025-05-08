@@ -123,7 +123,6 @@ ALL KEYBINDS ARE CASE SENSITIVE
 | --------------- | ------------------ |
 | Test Run        | `:Test`            |
 | Run Sprint Boot | `SpringBootRun`    |
-| Let me know any other commands |
 
 ### Package Manager (Lazy.nvim & Mason)
 
