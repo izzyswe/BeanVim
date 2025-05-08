@@ -57,6 +57,7 @@ Option 2: <br>
 # Plugin Features
 - Java LSP support via `jdtls`
 - Gradle and Maven integration
+- SceneBuilder Command (may need to manually switch filepath)
 - Half baked Eclipse project integration
 - Android Emulation (you need Android Studio installed in order to use)
 - Debugging support (DAP)
