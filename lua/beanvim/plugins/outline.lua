@@ -16,6 +16,7 @@ return {
         if vim.api.nvim_buf_get_option(bufnr, "buftype") == "" then
           vim.schedule(function()
             require("outline").open()
+            vim.cmd("wincmd p") -- <-- Switch back to the original window using <C-w> p
           end)
         end
       end,
