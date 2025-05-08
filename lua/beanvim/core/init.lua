@@ -79,6 +79,19 @@ vim.api.nvim_create_user_command(
   { nargs =0 }
 )
 
+vim.api.nvim_create_user_command(
+  'Scenebuilder',
+  function(opts)
+    local filename = opts.args:gsub("%.fxml$", "") .. ".fxml"
+    local cmd = string.format(
+      '/Applications/SceneBuilder.app/Contents/MacOS/SceneBuilder "%s/app/src/main/resources/%s"',
+      vim.fn.getcwd(),
+      filename
+    )
+    vim.fn.jobstart(cmd, { detach = true })
+  end,
+  { nargs = 1, complete = "file" }
+)
 -- this is where you can load your custom colours
 --require("beanvim.core.color") -- Load color scheme
 
