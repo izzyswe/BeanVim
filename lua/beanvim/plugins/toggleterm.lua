@@ -11,6 +11,7 @@ local function find_project_root()
       return current_dir
     end
     current_dir = vim.fn.fnamemodify(current_dir, ":h")  -- Go up one directory
+    -- print("Checking directory: " .. current_dir)  -- Debug statement
   end
   return nil
 end
@@ -39,20 +40,20 @@ return {
         if extension == "java" then
          -- For Java files, find the project root
           local project_root = find_project_root()
-           if project_root then
-            -- Check if the current file is in the 'test' directory
-            if file:find("/test/") then
-              -- Run tests for the project
-              cmd = "cd " .. project_root .. " && gradle test"
+          if project_root then
+            -- -- Check if the current file is in the 'test' directory
+            -- if filename_with_ext == "build.gradle.kts" or filename == "build.gradle" then
+            --   cmd = "gradle build && gradle run"
+            -- elseif filename_with_ext == "pom.xml" then
+            --   cmd = "mvn compile exec:java"
+            -- end
+            if vim.fn.filereadable(project_root .. "/build.gradle.kts") == 1 or vim.fn.filereadable(project_root .. "/build.gradle") == 1 then
+                cmd = "cd " .. project_root .. " && gradle build && gradle run"
+            elseif vim.fn.filereadable(project_root .. "/pom.xml") == 1 then
+                cmd = "cd " .. project_root .. " && mvn compile exec:java"
             else
-              -- Run gradle build and run from the project root
-              cmd = "gradle build && gradle run" --.. project_root
-            end
-
-            if file:find("/test/") then
-              cmd = "cd" .. project_root .. " && mvn test"
-            else
-              cmd = "mvn compile exec:java"
+                print("No supported build file found in project root.")
+                return
             end
           else
             print("Could not find build.gradle or pom.xml in the project root.")
