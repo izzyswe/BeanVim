@@ -59,7 +59,7 @@ vim.api.nvim_create_user_command(
 )
 
 vim.api.nvim_create_user_command(
-  'springBootRun',
+  'SpringBootRun',
   function ()
     local project_root = find_project_root()
     -- check if we are in the project root folder first
