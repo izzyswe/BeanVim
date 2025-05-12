@@ -91,7 +91,7 @@ but i think you will be able to do most of the things you want straight out of t
 I hope you find it just as helpful as I did when developing!
 <br>
 # Commands and Keybinds
-ALL KEYBINDS ARE CASE SENSITIVE
+ALL KEYBINDS ARE CASE SENSITIVE, ALSO MY LEADER KEY IS SPACE BAR, YOURS COULD BE DIFFERENT JUST AN FYI
 
 ### Basic command to build habit
 
