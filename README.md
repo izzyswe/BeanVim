@@ -9,8 +9,8 @@
 ### TABLE OF CONTENT
 
 - [Screenshots](#screenshots)
-- [How to install](#how-to-install)
 - [Plugin Features](#plugin-features)
+- [How to install](#how-to-install)
 - [Why I Made This](#why-i-made-this)
 - [Commands and Keybinds](#commands-and-keybinds)
 - [Other Distros](#other-distros)
@@ -24,6 +24,18 @@
 
 ### Editor Layout
 <img width="1679" alt="Screenshot 2025-05-05 at 6 26 12 AM" src="https://github.com/user-attachments/assets/ec09ed2a-eff8-4b82-800e-c6b6b597ec3c" />
+
+# Plugin Features
+- Java LSP support via `jdtls`
+- Gradle and Maven integration
+- SceneBuilder Command (may need to manually switch filepath)
+- Half baked Eclipse project integration
+- Android Emulation (you need Android Studio installed in order to use)
+- Debugging support (DAP)
+- Fuzzy finder (Telescope)
+- Code formatting and linting
+- Code Outline
+- Tree view, lualine, and more
 
 # How To Install
 ### CLONE USING THE FOLLOWING
@@ -53,18 +65,6 @@ Option 2: <br>
 - Type `cd C:\Users\<YourUsername>\AppData\Local\` <br>
 - rename the folder to "nvim" <br>
 - launch Neovim by typing `nvim`
-
-# Plugin Features
-- Java LSP support via `jdtls`
-- Gradle and Maven integration
-- SceneBuilder Command (may need to manually switch filepath)
-- Half baked Eclipse project integration
-- Android Emulation (you need Android Studio installed in order to use)
-- Debugging support (DAP)
-- Fuzzy finder (Telescope)
-- Code formatting and linting
-- Code Outline
-- Tree view, lualine, and more
 
 # Why I Made This
 So this preconfiguration is based on my own configurations.
