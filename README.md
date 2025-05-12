@@ -117,7 +117,9 @@ ALL KEYBINDS ARE CASE SENSITIVE
 | Maven Project     | `:MavenInit <project name>`  |
 | Gradle Project    | `:GradleInit`                |
 | Eclipse Project   | `:EclipseInit`               |
-| Open Scenebuilder | `:SceneBuilder <fxml name>`  |
+| Open Scenebuilder | `:SceneBuilder <fxml name>`  | 
+
+<br> (NOTE: you can add .fxml "projectName.fxml" if you want to be specific but the command will already know if you just type the name "projectName", Just make sure it's within the resources folder)
 
 ### Gradle/Maven Commands
 
