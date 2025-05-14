@@ -73,7 +73,7 @@ java specific is if you're a weirdo like me and you are chronically obsessed wit
 
 I like using IntelliJ and Eclipse works, These were the 2 tools I used for awhile before I committed to Neovim full-time. 
 IntelliJ IdeaVim works great and the Eclipse vim extension is a bit spotty but works for what you need. 
-Out of the 2 IDE's IntelliJ vim extension works better, However, I found myself trying to force Vim keybinds into IntelliJ
+Out of the 2 IDEs, IntelliJ vim extension works better, However, I found myself trying to force Vim keybinds into IntelliJ
 and it was getting very frustrating as there was 2 conflicting keybind for everything, Could I have just overridden alot of them? Absolutely
 but i didn't want to do the manual keybind change, my Neovim configuration had most of the basic things I needed anyways, so over the months, 
 I tried to commit full time to Neovim, it was difficult, remembering the keybind, knowing how and what the modularity did and what things do...etc... <br>
