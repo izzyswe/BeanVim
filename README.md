@@ -71,22 +71,23 @@ So this preconfiguration is based on my own configurations.
 The reason I decided to make a whole dedicated version of this configuration 
 java specific is if you're a weirdo like me and you are chronically obsessed with using Neovim for everything. <br>
 
-I like using IntelliJ and Eclipse works, These were the 2 tools I used for awhile before I committed to Neovim full-time 
-IntelliJ IdeaVim works great and the Eclipse vim extension is a bit spotty but works for what you need 
-out of the 2, IntelliJ vim extension works better, However, I found myself trying to force Vim keybinds into IntelliJ
+I like using IntelliJ and Eclipse works, These were the 2 tools I used for awhile before I committed to Neovim full-time. 
+IntelliJ IdeaVim works great and the Eclipse vim extension is a bit spotty but works for what you need. 
+Out of the 2 IDE's IntelliJ vim extension works better, However, I found myself trying to force Vim keybinds into IntelliJ
 and it was getting very frustrating as there was 2 conflicting keybind for everything, Could I have just overridden alot of them? Absolutely
 but i didn't want to do the manual keybind change, my Neovim configuration had most of the basic things I needed anyways, so over the months, 
 I tried to commit full time to Neovim, it was difficult, remembering the keybind, knowing how and what the modularity did and what things do...etc... <br>
 
-Setting it up for other languages were fairly simple and didn't require much tinkering, since the cmd line and Neovim was all you needed, 
-and by this time, I was getting very familar with the keybind, the environment and everything, so I tried to use it for java full time 
+Setting it up for other languages were fairly simple and didn't require much tinkering, since the cmd line and Neovim was all you needed. 
+By this time, I was getting very familar with the keybind, the environment and everything, so I tried to use it for java full time 
 but setting up for java environment was frustrating, especially when i was trying to set up the project structure to work and run like Eclipse.
 so I thought there would be exisiting popular pre configuration for Java or distro and I didn't find many, most of them were very general for <br>
-the more modern languages or ones that don't require too much setup.
+the more modern languages or ones that don't require too much setup, doing the bare minimum. Basically not meeting my use case.
 
-Anyways, i realized my setup has more and more became much more focused on Java, and I thought in case anyone would like to use Java in their Neovim
-and find it not worth or frustrating to setup a Java environment, This is for you! its not great by any means 
-but i think you will be able to do most of the things you want straight out of the box, no crazy configuring or tweaking. <br>
+Anyways, i realized my setup has more and more became much more focused on Java and integrated many things as a result.
+I thought in case anyone would like to use Java in their Neovim and find it not worth, frustrating or time-consuming to setup a Java environment, 
+This is for you! its not the great by any means but I think you will be able to do most of the things you want straight out of the box, 
+no crazy configuring or tweaking. <br>
 
 I hope you find it just as helpful as I did when developing!
 <br>
