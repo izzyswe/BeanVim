@@ -152,12 +152,6 @@ return {
 
     vim.lsp.config('jdtls', {
       capabilities = capabilities,
-      cmd = {
-        "/Users/xyz.isx/.local/share/nvim/mason/bin/jdtls",
-        "-data",
-        vim.fn.stdpath("cache") .. "/jdtls/workspace",
-      },
-      root_dir = require("lspconfig.util").root_pattern('pom.xml', ".project", "gradlew",'build.gradle', '.git'),
       settings = {
         java = {
           configuration = {
