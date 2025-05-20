@@ -6,14 +6,9 @@ return {
     { "antosha417/nvim-lsp-file-operations", config = true },
     { "folke/neodev.nvim", opts = {} },
     "williamboman/mason.nvim",
+    "williamboman/mason-lspconfig.nvim",
   },
   config = function()
-    -- import lspconfig plugin
-    local lspconfig = require("lspconfig")
-
-    -- import mason_lspconfig plugin
-    local mason_lspconfig = require("mason-lspconfig")
-
     -- import cmp-nvim-lsp plugin
     local cmp_nvim_lsp = require("cmp_nvim_lsp")
 
@@ -154,94 +149,82 @@ return {
         }
         vim.diagnostic.open_float(nil, float_opts)
       end,
-    })
-    
-    mason_lspconfig.setup_handlers({
-      function(server_name)
-        lspconfig[server_name].setup({
-          capabilities = capabilities,
-        })
-      end,
+    }) 
 
-      -- Language server configurations
-      ["jdtls"] = function()
-         -- Configure Java server
-         lspconfig["jdtls"].setup({
-            cmd = {
-             "/Users/isaackim/.local/share/nvim/mason/bin/jdtls",
-             "-data",
-             vim.fn.stdpath("cache") .. "/jdtls/workspace",
-           },
-           root_dir = require("lspconfig.util").root_pattern('pom.xml', ".project", "gradlew",'build.gradle', '.git'),
-          capabilities = capabilities,
-          settings = {
-            java = {
-                configuration = {
-                    updateBuildConfiguration = "automatic",
-                },
-                maven = {
-                    downloadSources = true,
-                },
-                implementationsCodeLens = {
-                    enabled = true,
-                },
-                referencesCodeLens = {
-                    enabled = true,
-                },
-                format = {
-                    enabled = true,
-                    settings = {
-                        url = "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
-                        profile = "GoogleStyle",
-                    },
-                },
+    vim.lsp.config('jdtls', {
+      capabilities = capabilities,
+      cmd = {
+        "/Users/xyz.isx/.local/share/nvim/mason/bin/jdtls",
+        "-data",
+        vim.fn.stdpath("cache") .. "/jdtls/workspace",
+      },
+      root_dir = require("lspconfig.util").root_pattern('pom.xml', ".project", "gradlew",'build.gradle', '.git'),
+      settings = {
+        java = {
+          configuration = {
+            updateBuildConfiguration = "automatic",
+          },
+          maven = {
+            downloadSources = true,
+          },
+          implementationsCodeLens = {
+            enabled = true,
+          },
+          referencesCodeLens = {
+            enabled = true,
+          },
+          format = {
+            enabled = true,
+            settings = {
+              url = "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
+              profile = "GoogleStyle",
             },
           },
-        })
-      end,
-      ["html"] = function()
-        -- Configure HTML server
-        lspconfig["html"].setup({
-          capabilities = capabilities,
-        })
-      end,
-      ["cssls"] = function()
-        -- Configure CSS server
-        lspconfig["cssls"].setup({
-          capabilities = capabilities,
-        })
-      end,
-      ["graphql"] = function()
-        -- Configure graphql language server
-        lspconfig["graphql"].setup({
-          capabilities = capabilities,
-          filetypes = { "graphql", "gql", "svelte", "typescriptreact", "javascriptreact" },
-        })
-      end,
-      ["emmet_ls"] = function()
-        -- configure emmet language server
-        lspconfig["emmet_ls"].setup({
-          capabilities = capabilities,
-          filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less", "svelte" },
-        })
-      end,
-      ["lua_ls"] = function()
-        -- configure lua server (with special settings)
-        lspconfig["lua_ls"].setup({
-          capabilities = capabilities,
-          settings = {
-            Lua = {
-              diagnostics = {
-                globals = { "vim" },
-              },
-              completion = {
-                callSnippet = "Replace",
-              },
-            },
-          },
-        })
-      end,
+        },
+      },
     })
+
+    vim.lsp.config('html', {
+      capabilities = capabilities,
+    })
+
+    vim.lsp.config('cssls', {
+      capabilities = capabilities,
+    })
+
+    vim.lsp.config('graphql', {
+      capabilities = capabilities,
+      filetypes = { "graphql", "gql", "svelte", "typescriptreact", "javascriptreact" },
+    })
+
+    vim.lsp.config('emmet_ls', {
+      capabilities = capabilities,
+      filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less", "svelte" },
+    })
+
+    vim.lsp.config('lua_ls', {
+      capabilities = capabilities,
+      settings = {
+        Lua = {
+          diagnostics = {
+            globals = { "vim" },
+            disable = { 'missing-fields' },
+          },
+          completion = {
+            callSnippet = "Replace",
+          },
+        },
+      },
+    })
+
+    vim.lsp.enable({
+      'jdtls',
+      'html',
+      'cssls',
+      'graphql',
+      'emmet_ls',
+      'lua_ls'
+  })
   end,
 }
 
