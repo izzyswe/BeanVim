@@ -118,7 +118,7 @@ ALL KEYBINDS ARE CASE SENSITIVE, ALSO MY LEADER KEY IS SPACE BAR, YOURS COULD BE
 | Maven Project     | `:MavenInit <project name>`  |
 | Gradle Project    | `:GradleInit`                |
 | Eclipse Project   | `:EclipseInit`               |
-| Web App Project   | ':WebAppInit'
+| Web App Project   | `:WebAppInit`                |
 | Open Scenebuilder | `:SceneBuilder <fxml name>`  | 
 
 <br> (NOTE: you can add .fxml "projectName.fxml" if you want to be specific <br>
