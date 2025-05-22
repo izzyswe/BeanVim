@@ -96,6 +96,7 @@ return {
       capabilities = capabilities,
       settings = {
         java = {
+          root_markers = { '.project', 'pom.xml', 'build.gradle', 'build.gradle.kts', '.git' },
           configuration = {
             updateBuildConfiguration = "automatic",
           },
