@@ -38,6 +38,20 @@ vim.api.nvim_create_user_command(
 )
 
 vim.api.nvim_create_user_command(
+  'WebAppInit',
+  function (opts)
+    local project_name = opts.args
+    vim.cmd('!mvn archetype:generate ' ..
+            '-DgroupId=com.' .. project_name .. ' ' ..
+            '-DartifactId=' .. project_name .. ' ' ..
+            '-DarchetypeArtifactId=maven-archetype-webapp ' ..
+            '-DarchetypeCatalog=internal ' ..
+            '-DinteractiveMode=false')
+  end,
+  { nargs = 1}
+)
+
+vim.api.nvim_create_user_command(
   'Test', 
   function ()
     local project_root = find_project_root()
@@ -92,6 +106,64 @@ vim.api.nvim_create_user_command(
   end,
   { nargs = 1, complete = "file" }
 )
+
+-- Create Eclipse project structure command
+    vim.api.nvim_create_user_command("EclipseInit", function()
+        local project_name = vim.fn.fnamemodify(vim.fn.getcwd(), ":t")
+        local project_root = vim.fn.getcwd()
+        -- <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-21">
+        local classpath = [[
+          <?xml version="1.0" encoding="UTF-8"?>
+          <classpath>
+            <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+            <attributes>
+             <attribute name="module" value="true"/>
+            </attributes>
+           </classpathentry>
+            <classpathentry kind="src" path="src"/>
+            <classpathentry kind="output" path="bin"/>
+          </classpath>
+        ]]
+
+        local project = string.format([[
+          <?xml version="1.0" encoding="UTF-8"?>
+          <projectDescription>
+              <name>%s</name>
+              <comment></comment>
+              <projects></projects>
+              <buildSpec>
+                <buildCommand>
+                      <name>org.eclipse.jdt.core.javabuilder</name>
+                      <arguments></arguments>
+                </buildCommand>
+              </buildSpec>
+              <natures>
+                  <nature>org.eclipse.jdt.core.javanature</nature>
+              </natures>
+          </projectDescription>
+        ]], project_name)
+
+        -- Create folders
+        vim.fn.mkdir(project_root .. "/src", "p")
+        vim.fn.mkdir(project_root .. "/bin", "p")
+
+        -- Write .classpath file
+        local classpath_file = io.open(project_root .. "/.classpath", "w")
+        if classpath_file then
+            classpath_file:write(classpath)
+            classpath_file:close()
+        end
+
+        -- Write .project file
+        local project_file = io.open(project_root .. "/.project", "w")
+        if project_file then
+            project_file:write(project)
+            project_file:close()
+        end
+
+        print("Eclipse project structure initialized in " .. project_root)
+    end, {})
+
 -- this is where you can load your custom colours
 --require("beanvim.core.color") -- Load color scheme
 
