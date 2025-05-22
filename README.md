@@ -29,7 +29,7 @@
 - Java LSP support via `jdtls`
 - Gradle and Maven integration
 - SceneBuilder Command (may need to manually switch filepath)
-- Half baked Eclipse project integration
+- (NEW) full Eclipse project integration
 - Android Emulation (you need Android Studio installed in order to use)
 - Debugging support (DAP)
 - Fuzzy finder (Telescope)
@@ -118,6 +118,7 @@ ALL KEYBINDS ARE CASE SENSITIVE, ALSO MY LEADER KEY IS SPACE BAR, YOURS COULD BE
 | Maven Project     | `:MavenInit <project name>`  |
 | Gradle Project    | `:GradleInit`                |
 | Eclipse Project   | `:EclipseInit`               |
+| Web App Project   | ':WebAppInit'
 | Open Scenebuilder | `:SceneBuilder <fxml name>`  | 
 
 <br> (NOTE: you can add .fxml "projectName.fxml" if you want to be specific <br>
