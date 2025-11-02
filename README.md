@@ -13,6 +13,7 @@
 - [How to install](#how-to-install)
 - [Why I Made This](#why-i-made-this)
 - [Commands and Keybinds](#commands-and-keybinds)
+- [Roadmaps](Roadmap)
 - [Other Distros](#other-distros)
 
 
@@ -186,6 +187,16 @@ but the command will already know if you just type the name "projectName", Just 
 | Find string in cwd               | `<leader>fs`                |
 | find string under cursor in cwd  | `<leader>fc`                |
 | Open Simulators                  | `:Telescope simulators run` |
+
+
+# ROAD MAP
+There are future addition I want to modify and create or even flatout restructure but currently these are the current plans
+- Integrate java & javac commands for better integration
+- fix the java command when running code via `<leader> + r`
+- Create a place for issues to help add features
+- Menu to choose colourscheme instead of going back to the config file
+- enrich spring boot integration if possible
+- current end (these are the immediate ones that I want to fix and work on)
 
 
 # Other Distros
